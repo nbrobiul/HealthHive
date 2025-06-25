@@ -1,40 +1,52 @@
-🌿 HealthHive – Your All-in-One Health Companion
-HealthHive is an intuitive and comprehensive health management app designed to empower individuals to take control of their wellness. Whether it’s staying hydrated, remembering medications, or accessing educational health content — HealthHive brings all essential tools into one unified platform.
+🌿 HealthHive
+HealthHive is a smart and user-friendly health management app designed to help users take control of their daily wellness. From water intake reminders to medication alerts, vaccination tracking, prescription storage, disease management, nutrition planning, and women’s health features — HealthHive brings essential health tools together in one place.
 
-🚀 Core Features
-💧 Water Intake Reminders – Stay hydrated with smart notifications. ✅ Completed
+Key Features
+Water Intake Reminders: Timely notifications to help you stay hydrated.
 
-🩺 Appointment Reminders – Keep track of medical appointments without missing a date. ✅ Completed
+Appointment Reminders: Never miss your medical appointments.
 
-💊 Medication Reminders – Get timely alerts for taking your medicine. ✅ Completed
+Medication Reminders: Stay on schedule with your medicines.
 
-💉 Vaccination Tracker – Log and manage upcoming and past vaccinations. 🛠️ In Progress
+Vaccination Tracker: Log and manage upcoming and past vaccinations.
 
-📄 Prescription Storage – Securely store and view your medical prescriptions. 🛠️ In Progress
+Prescription Storage: Securely store and access your medical prescriptions.
 
-🦠 Disease Management – Track symptoms and manage chronic conditions effectively. 🛠️ In Progress
+Disease Management: Track symptoms and manage chronic conditions.
 
-🥗 Nutrition & Diet Planning – Plan meals and follow personalized dietary guidance. 🛠️ In Progress
+Nutrition & Diet Planning: Manage your meals and dietary goals.
 
-👩‍⚕️ Women’s Health – Includes menstrual tracking, pregnancy care, and more. 🛠️ In Progress
+Women’s Health: Menstrual tracking, pregnancy care, and more.
 
-📚 Educational Resources – Access curated articles and reliable health information. 🛠️ In Progress
+Educational Resources: Access health-related articles and tips.
 
-🧑‍💻 Development Status
-HealthHive is under active development. Several core modules are already functional, and additional features are being actively implemented. The project is evolving rapidly with a focus on usability, accessibility, and health awareness.
+Secure Login: User authentication powered by Firebase Authentication.
 
-🛠️ Tech Stack
-Languages: Java / Kotlin (Android)
+Development Status
+The app is actively under development. Water intake, medication, and appointment reminders are complete, while other features are being developed and improved.
 
-Database: SQLite, Firebase
+Technology Stack
+Language: Java (Android)
 
-Architecture: MVC / MVVM Pattern
+Database: SQLite (local), Firebase (cloud)
 
-🔮 Upcoming Features
-Enhanced notification system
+Backend: PHP with MySQL
 
-Advanced disease tracking & analytics
+Networking: Volley
+
+Image Loading: Picasso
+
+Architecture: MVC
+
+UI Design: Following Material Design principles
+
+Future Plans
+Advanced notification system with customization options
+
+Detailed disease analytics and health reports
 
 Community support for shared health goals
 
-Multi-user and family account support
+Multi-user and family account management
+
+Multi-language support and offline mode
