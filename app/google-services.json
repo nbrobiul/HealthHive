@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590810104117",
+    "project_id": "myhealthcare-6e29f",
+    "storage_bucket": "myhealthcare-6e29f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590810104117:android:e006886fd06f25296f4c7c",
+        "android_client_info": {
+          "package_name": "com.dalazu.addprescription"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvsg_BP8YfltjMn4v3wY56-v9Pgbe9uUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

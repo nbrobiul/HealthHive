@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="Appointment Reminder"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_grapich_prescription"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/appointment_grapich"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:text="Add your appointment reminder and get\nnotified at the time."
+        app:layout_constraintEnd_toEndOf="@id/iv_grapich_prescription"
+        app:layout_constraintStart_toStartOf="@id/iv_grapich_prescription"
+        app:layout_constraintTop_toBottomOf="@id/iv_grapich_prescription" />
+
+
+    <Button
+        android:id="@+id/btn_prescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Reminder"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="@color/color_primary"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_prescription"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/btn_prescription"
+        app:layout_constraintTop_toBottomOf="@id/btn_prescription"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

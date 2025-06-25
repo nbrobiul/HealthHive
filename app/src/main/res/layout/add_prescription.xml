@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddPrescription.AddPrescription"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/prescription_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:title="Add Prescription"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/prescription_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a Prescription File"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/color_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prescription_toolbar"
+        />
+
+
+    <TextView
+        android:id="@+id/prescription_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="please fill out your prescription details and capture image and attached to file."
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/prescription_text"
+        app:layout_constraintEnd_toEndOf="@+id/prescription_text"
+        app:layout_constraintTop_toBottomOf="@id/prescription_text"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/prescription_details"
+        app:layout_constraintEnd_toEndOf="@id/prescription_details"
+        app:layout_constraintTop_toBottomOf="@+id/prescription_details"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor Name"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="5dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Appointment_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/doctor_name"
+        app:layout_constraintEnd_toEndOf="@id/doctor_name"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_Appointment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/appointment_icon"
+            android:drawablePadding="5dp"
+            android:hint="Appointment Date"
+            android:inputType="none"
+            android:focusableInTouchMode="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/doctor_chamber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Appointment_date"
+        app:layout_constraintEnd_toEndOf="@id/Appointment_date"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_date"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doctor_chamber_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            android:hint="Doctor Chamber Address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/image_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/image_border"
+        app:layout_constraintEnd_toEndOf="@id/doctor_chamber"
+        app:layout_constraintStart_toStartOf="@id/doctor_chamber"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_chamber"
+        />
+
+    <ImageView
+        android:id="@+id/iv_addImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/add_icon"
+        app:layout_constraintTop_toTopOf="@+id/image_placeholder"
+        app:layout_constraintStart_toStartOf="@id/image_placeholder"
+        app:layout_constraintEnd_toEndOf="@id/image_placeholder"
+        app:layout_constraintTop_toBottomOf="@+id/image_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/image_placeholder"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your prescription photo here"
+        app:layout_constraintStart_toStartOf="@id/iv_addImage"
+        app:layout_constraintEnd_toEndOf="@id/iv_addImage"
+        app:layout_constraintTop_toBottomOf="@+id/iv_addImage"
+        />
+
+
+    <TextView
+        android:id="@+id/format_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Accepted format: jpg, png and pdf"
+        app:layout_constraintStart_toStartOf="@id/image_placeholder"
+        app:layout_constraintEnd_toEndOf="@id/image_placeholder"
+        app:layout_constraintTop_toBottomOf="@+id/image_placeholder"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_prescription_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/color_primary"
+        android:text="Add prescription"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintStart_toStartOf="@id/format_details"
+        app:layout_constraintTop_toBottomOf="@+id/format_details"
+        app:layout_constraintEnd_toEndOf="@id/format_details"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

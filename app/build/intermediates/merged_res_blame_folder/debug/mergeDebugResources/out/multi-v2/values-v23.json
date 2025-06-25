@@ -1,0 +1,85 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dalazu.addprescription.app-mergeDebugResources-42:/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\mdrob\\.gradle\\caches\\transforms-4\\3411172a2a2a2b57cfe5c351461ca889\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,9,13,16,19,22,25,28,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,271,413,574,784,991,1198,1401,1603,1868",
+                        "endLines": "4,8,12,15,18,21,24,27,31,35",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "266,408,569,779,986,1193,1396,1598,1863,2136"
+                    },
+                    "to": {
+                        "startLines": "60,63,67,71,74,77,80,83,86,90",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3632,3848,3990,4151,4361,4568,4775,4978,5180,5445",
+                        "endLines": "62,66,70,73,76,79,82,85,89,93",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "3843,3985,4146,4356,4563,4770,4973,5175,5440,5713"
+                    }
+                },
+                {
+                    "source": "D:\\AddPrescription\\app\\src\\main\\res\\values-v23\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "416"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "325",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "570"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdrob\\.gradle\\caches\\transforms-4\\a9da53c591f013e62029a55c335fedc5\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
+                    },
+                    "to": {
+                        "startLines": "2,3,11,12,13,27,41,42,43,46,50,51,52,53",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,575,650,737,1475,2225,2344,2471,2693,2917,3032,3139,3252",
+                        "endLines": "2,3,11,12,26,40,41,42,45,49,50,51,52,56",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,645,732,1470,2220,2339,2466,2688,2912,3027,3134,3247,3477"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdrob\\.gradle\\caches\\transforms-4\\3f0faeafe3b628f015fc21eeea48a49e\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "57",
+                        "startColumns": "4",
+                        "startOffsets": "3482",
+                        "endLines": "59",
+                        "endColumns": "12",
+                        "endOffsets": "3627"
+                    }
+                }
+            ]
+        }
+    ]
+}

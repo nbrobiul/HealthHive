@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/Appointment_Reminder_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reminder"
+            android:textSize="20dp"
+            />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <TextView
+        android:id="@+id/prescription_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add an Medicine Reminder"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/color_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Appointment_Reminder_toolbar"
+        />
+
+
+    <TextView
+        android:id="@+id/Appointment_Reminder_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="please fill out your Appointment details and get notified at the time."
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/prescription_text"
+        app:layout_constraintEnd_toEndOf="@+id/prescription_text"
+        app:layout_constraintTop_toBottomOf="@id/prescription_text"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Appointment_Reminder_doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/Appointment_Reminder_details"
+        app:layout_constraintEnd_toEndOf="@id/Appointment_Reminder_details"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_Reminder_details"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor Name"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="5dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gender_bloodGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Appointment_Reminder_doctor_name"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_Reminder_doctor_name"
+        app:layout_constraintEnd_toEndOf="@id/Appointment_Reminder_doctor_name"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_Appointment_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Appointment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/appointment_icon"
+                android:drawablePadding="5dp"
+                android:hint="Dosage"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_Appointment_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/time_icon"
+                android:drawablePadding="5dp"
+                android:hint="Frequency"
+                android:layout_marginLeft="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/serial_visited_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+        app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/appointment_icon"
+                android:drawablePadding="5dp"
+                android:hint="Start Date"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_totall_visited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/appointment_icon"
+                android:drawablePadding="5dp"
+                android:hint="End Date"
+                android:layout_marginLeft="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_contact_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/serial_visited_no"
+        app:layout_constraintEnd_toEndOf="@id/serial_visited_no"
+        app:layout_constraintTop_toBottomOf="@+id/serial_visited_no"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes."
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_prescription_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/color_primary"
+        android:text="Add prescription"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintStart_toStartOf="@id/tl_contact_no"
+        app:layout_constraintTop_toBottomOf="@+id/tl_contact_no"
+        app:layout_constraintEnd_toEndOf="@id/tl_contact_no"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F0F0F0</color>
+    <color name="black">#FF000000</color>
+    <color name="color_primary">#03CACA</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">HealthHive</string>
+    <string name="gcm_defaultSenderId" translatable="false">590810104117</string>
+    <string name="google_api_key" translatable="false">AIzaSyBvsg_BP8YfltjMn4v3wY56-v9Pgbe9uUk</string>
+    <string name="google_app_id" translatable="false">1:590810104117:android:e006886fd06f25296f4c7c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBvsg_BP8YfltjMn4v3wY56-v9Pgbe9uUk</string>
+    <string name="google_storage_bucket" translatable="false">myhealthcare-6e29f.firebasestorage.app</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="project_id" translatable="false">myhealthcare-6e29f</string>
+    <style name="Base.Theme.AddPrescription" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AddPrescription" parent="Base.Theme.AddPrescription"/>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_circle_background_color"/>
+    </declare-styleable>
+</resources>

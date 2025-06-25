@@ -1,0 +1,382 @@
+[
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_vaccination_reminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_vaccination_reminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_medicine_reminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_medicine_reminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/xml_data_extraction_rules.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_medicine_reminder_items.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/medicine_reminder_items.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_add_mreminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_add_mreminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_nav_header.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_calender.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_calender.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_person_name.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/person_name.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_edit.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_apple.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_apple.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_name_image.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/name_image.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_gradient.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/gradient.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_prescription_items.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/prescription_items.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_login.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_gender.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/gender.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_time.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_time.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_blood.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/blood.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_image_03.jpg.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/image_03.jpg"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_add_prescription.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/add_prescription.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_circale_background.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/circale_background.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_email.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_prescription_file.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_prescription_file.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_appointment_reminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_appointment_reminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_calendar.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/calendar.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_facebook.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_facebook.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_prescription_grapich.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/prescription_grapich.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_weight.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/weight.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_add_icon.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/add_icon.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_person_icon.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/person_icon.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_dashboard.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_selected_dot.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/selected_dot.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_educational_resources.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_educational_resources.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_calender_image.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/calender_image.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_forget_password.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_forget_password.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_img.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/img.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_water_reminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_water_reminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_nutrition_diet_planing.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_nutrition_diet_planing.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_calender.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/calender.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_pencil.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/pencil.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_disease_management.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_disease_management.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_unselected_dot.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/unselected_dot.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_email.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/email.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_appointment_grapich.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/appointment_grapich.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/xml_backup_rules.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_google.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_google.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_time_icon.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/time_icon.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_appointment_item.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/appointment_item.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_delete.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_item_layout_health_education.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/item_layout_health_education.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_contact.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_contact.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_register_account.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_register_account.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_profile_icon.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/profile_icon.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_height.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/height.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_tag_background.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/tag_background.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/menu_toolbar_menu.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/menu/toolbar_menu.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_womens_health.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_womens_health.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_inflate_dashboard.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/inflate_dashboard.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_rounded_background.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/rounded_background.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_item_layout_grid.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/item_layout_grid.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_medical_prescription.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/medical_prescription.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_image_02.jpg.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/image_02.jpg"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_blood_group_dropdown_items.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/blood_group_dropdown_items.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_glass_of_water.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/glass_of_water.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_fragment_health_education.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/fragment_health_education.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_circle_progressbar.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/circle_progressbar.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_pactic.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/pactic.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_edit_icon.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/edit_icon.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_profile.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_water_reminder_items.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/water_reminder_items.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_medicine_image.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/medicine_image.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_phone.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/phone.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_appointment_icon.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/appointment_icon.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_gender_dropdown_items.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/gender_dropdown_items.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_serial_number.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_serial_number.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_activity_add_appointment_reminder.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/activity_add_appointment_reminder.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/layout_card_alert_dialog.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/layout/card_alert_dialog.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_location.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_ic_profile.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_image_01.jpg.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/image_01.jpg"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_password.png.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/password.png"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/drawable_image_border.xml.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/drawable/image_border.xml"
+    },
+    {
+        "merged": "com.dalazu.addprescription.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.dalazu.addprescription.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+    }
+]

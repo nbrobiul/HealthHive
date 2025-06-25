@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2F7C4DFF"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    app:cardElevation="5dp"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_01"
+        android:scaleType="centerCrop" />
+
+</com.google.android.material.card.MaterialCardView>

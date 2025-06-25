@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginTop="6dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <!-- Prescription Icon -->
+        <!-- Replace with your prescription icon -->
+
+
+        <!-- Details Section -->
+        <ImageView
+            android:id="@+id/prescription_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:alpha="0.5"
+            android:src="@drawable/medical_prescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Doctor Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/name_image"
+                    />
+
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Doctor Name"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+            <!-- Appointment Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/calender_image"
+                    />
+
+                <TextView
+                    android:id="@+id/appointment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Appointment Date"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Doctor's Chamber Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/email" /> <!-- Replace with your address icon -->
+
+                <TextView
+                    android:id="@+id/doctor_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Doctor's Chamber Address"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Delete Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ic_pencil"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/pencil" />
+
+            <ImageView
+                android:id="@+id/ic_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appointment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="8dp"
+        android:text="02 PM, Friday, 01-01-2024"
+        android:textColor="#8E8E8E"
+        android:textSize="12sp"
+        />
+</androidx.cardview.widget.CardView>

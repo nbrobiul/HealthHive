@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginSignupForget.ProfileActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:title="Edit Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:civ_border_width="2dp" />
+
+    <ImageView
+        android:id="@+id/profile_edit_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_profile"
+        app:layout_constraintEnd_toEndOf="@id/iv_profile"
+        android:src="@drawable/edit_icon"
+        android:padding="6dp"
+        android:background="@drawable/circale_background"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxStrokeColor="@color/color_primary"
+        app:layout_constraintStart_toStartOf="@id/iv_profile"
+        app:layout_constraintEnd_toEndOf="@id/iv_profile"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+        app:hintTextColor="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/person_name"
+            android:drawablePadding="5dp"
+            android:hint="Md Saimul Haque"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_birth_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ti_name"
+        app:layout_constraintTop_toBottomOf="@+id/ti_name"
+        app:layout_constraintEnd_toEndOf="@id/ti_name"
+        app:boxStrokeColor="@color/color_primary"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_birth_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="01/01/2024"
+            android:drawableStart="@drawable/calender"
+            android:drawablePadding="5dp"
+            android:inputType="none"
+            android:focusableInTouchMode="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_gmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ti_birth_date"
+        app:layout_constraintTop_toBottomOf="@+id/ti_birth_date"
+        app:layout_constraintEnd_toEndOf="@id/ti_birth_date"
+        app:boxStrokeColor="@color/color_primary"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="01/01/2024"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_country_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ti_gmail"
+        app:layout_constraintTop_toBottomOf="@+id/ti_gmail"
+        app:layout_constraintEnd_toEndOf="@id/ti_gmail"
+        android:orientation="horizontal"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_contact_number"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/color_primary"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ac_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="5dp"
+                android:hint="(188)126-9553"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gender_bloodGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ll_country_code"
+        app:layout_constraintTop_toBottomOf="@+id/ll_country_code"
+        app:layout_constraintEnd_toEndOf="@id/ll_country_code"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            app:boxStrokeColor="@color/color_primary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/act_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:inputType="none"
+                android:drawableStart="@drawable/gender"
+                android:drawablePadding="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/color_primary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/act_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:inputType="none"
+                android:lines="1"
+                android:drawableStart="@drawable/blood"
+                android:drawablePadding="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_height_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ll_gender_bloodGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ll_gender_bloodGroup"
+        app:layout_constraintEnd_toEndOf="@id/ll_gender_bloodGroup"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            app:boxStrokeColor="@color/color_primary"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:inputType="none"
+                android:drawableStart="@drawable/height"
+                android:drawablePadding="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/color_primary"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/act_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weight"
+                android:inputType="none"
+                android:drawableStart="@drawable/weight"
+                android:drawablePadding="5dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/color_primary"
+        android:text="Update Profile"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintStart_toStartOf="@id/ll_height_weight"
+        app:layout_constraintTop_toBottomOf="@+id/ll_height_weight"
+        app:layout_constraintEnd_toEndOf="@id/ll_height_weight"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

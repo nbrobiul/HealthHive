@@ -1,0 +1,253 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <!-- Left Image -->
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:background="@color/color_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/left_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Camlodin Plus 120 mg"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/left_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/dose_layout"
+            android:layout_marginStart="16dp" />
+
+        <!-- Horizontal Pill Indicators -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dose_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/title_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+            android:layout_marginTop="8dp">
+
+            <!-- After Breakfast -->
+            <TextView
+                android:id="@+id/btn_after_breakfast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:gravity="center"
+                android:text="After Breakfast"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_after_lunch"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- After Lunch -->
+            <TextView
+                android:id="@+id/btn_after_lunch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="After Lunch"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_after_breakfast"
+                app:layout_constraintEnd_toStartOf="@+id/btn_after_dinner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- After Dinner -->
+            <TextView
+                android:id="@+id/btn_after_dinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:gravity="center"
+                android:text="After Dinner"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/btn_after_lunch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Bottom Section -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/duration_and_frequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/title_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dose_layout">
+
+            <ImageView
+                android:id="@+id/duration_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_camera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/duration_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Duration: 1 Month"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/duration_icon"
+                app:layout_constraintTop_toTopOf="@id/duration_icon"
+                app:layout_constraintBottom_toBottomOf="@id/duration_icon" />
+
+            <ImageView
+                android:id="@+id/frequency_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:layout_constraintStart_toEndOf="@id/duration_text"
+                app:layout_constraintTop_toTopOf="@id/duration_text"
+                app:layout_constraintBottom_toBottomOf="@id/duration_text" />
+
+            <TextView
+                android:id="@+id/frequency_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Frequency: Daily"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/frequency_icon"
+                app:layout_constraintTop_toTopOf="@id/frequency_icon"
+                app:layout_constraintBottom_toBottomOf="@id/frequency_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/start_date_end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/duration_and_frequency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/duration_and_frequency">
+
+            <ImageView
+                android:id="@+id/start_date_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_camera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Start Date: 2025-01-01"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/start_date_image"
+                app:layout_constraintTop_toTopOf="@id/start_date_image"
+                app:layout_constraintBottom_toBottomOf="@id/start_date_image" />
+
+            <ImageView
+                android:id="@+id/end_date_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:layout_constraintStart_toEndOf="@id/start_date"
+                app:layout_constraintTop_toTopOf="@id/start_date"
+                app:layout_constraintBottom_toBottomOf="@id/start_date" />
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="End Date: 2025-01-01"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/end_date_image"
+                app:layout_constraintTop_toTopOf="@id/end_date_image"
+                app:layout_constraintBottom_toBottomOf="@id/end_date_image" />
+
+
+            <TextView
+                android:id="@+id/notes_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Notes:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/end_date" />
+
+            <TextView
+                android:id="@+id/notes_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Take with water after meals. Avoid taking it on an empty stomach."
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/notes_title" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

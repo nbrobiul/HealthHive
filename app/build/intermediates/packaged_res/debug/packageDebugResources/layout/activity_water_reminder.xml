@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WaterReminderActivity.WaterReminderActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:elevation="4dp"
+        app:title="Prescription File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/circularProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/circle_progressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialToolbar" />
+
+    <TextView
+        android:id="@+id/tv_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/2500 ml"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@id/circularProgressBar" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Enable Water Reminder"
+        app:layout_constraintTop_toBottomOf="@id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/circularProgressBar"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/circularProgressBar"
+        app:layout_constraintStart_toEndOf="@id/tv_title"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/chips_scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chips_group"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:fadingEdge="horizontal"
+            android:requiresFadingEdge="horizontal"
+            app:singleSelection="true"
+            >
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 ml"
+                app:chipCornerRadius="4dp"
+                android:backgroundTint="#B3EFEF"
+                />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200 ml"
+                app:chipCornerRadius="4dp"
+                android:backgroundTint="#B3EFEF"
+                />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300 ml"
+                app:chipCornerRadius="4dp"
+                android:backgroundTint="#B3EFEF"
+                />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400 ml"
+                app:chipCornerRadius="4dp"
+                android:backgroundTint="#B3EFEF"
+                />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 ml"
+                app:chipCornerRadius="4dp"
+                android:backgroundTint="#B3EFEF"
+                />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_todays_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Todays Record"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chips_scrollbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/water_reminder_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_todays_record" />
+</androidx.constraintlayout.widget.ConstraintLayout>

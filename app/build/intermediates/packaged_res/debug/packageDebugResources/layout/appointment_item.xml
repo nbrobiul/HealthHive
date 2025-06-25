@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Calendar Icon -->
+        <ImageView
+            android:id="@+id/icon_calendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="80dp"
+            android:alpha="0.5"
+            android:contentDescription="Calendar Icon"
+            android:src="@drawable/calendar"
+            app:layout_constraintBottom_toTopOf="@id/bar_under"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bar_over"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:background="@color/color_primary"
+            app:layout_constraintBottom_toTopOf="@id/bar_under"
+            app:layout_constraintEnd_toStartOf="@id/tv_doctor_name"
+            app:layout_constraintStart_toEndOf="@id/icon_calendar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bar_under"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_appointmentfooter_time"
+            app:layout_constraintTop_toBottomOf="@id/tv_apchamber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawableTint="#869E9E"
+            android:text="Md Saimul Hoque"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_calendar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_nextap_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_calender"
+            android:drawableTint="#869E9E"
+            android:text="Next Appointment: 01/01/2024"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_doctor_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_doctor_name" />
+
+
+        <TextView
+            android:id="@+id/tv_appointment_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_time"
+            android:drawableTint="#869E9E"
+            android:text="Time: 12:00 PM"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_nextap_date"
+            app:layout_constraintStart_toStartOf="@id/tv_doctor_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_nextap_date" />
+
+
+        <TextView
+            android:id="@+id/tv_apserial_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_serial_number"
+            android:drawableTint="#869E9E"
+            android:text="Serial No: 0012"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_visit"
+            app:layout_constraintStart_toStartOf="@id/tv_appointment_time"
+            app:layout_constraintTop_toBottomOf="@id/tv_appointment_time" />
+
+        <TextView
+            android:id="@+id/tv_total_visit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_serial_number"
+            android:drawableTint="#869E9E"
+            android:text="Visited: 04"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_appointment_time"
+            app:layout_constraintStart_toEndOf="@id/tv_apserial_number"
+            app:layout_constraintTop_toBottomOf="@+id/tv_appointment_time" />
+
+        <TextView
+            android:id="@+id/tv_contact_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_contact"
+            android:drawableTint="#869E9E"
+            android:text="Contact No: +880 1819285553"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_total_visit"
+            app:layout_constraintStart_toStartOf="@id/tv_doctor_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_apserial_number" />
+
+
+        <TextView
+            android:id="@+id/tv_apchamber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawableTint="#869E9E"
+            android:text="Chamber: National Hospital"
+            android:textColor="#5A5A5A"
+            app:layout_constraintEnd_toEndOf="@id/tv_contact_no"
+            app:layout_constraintStart_toStartOf="@id/tv_contact_no"
+            app:layout_constraintTop_toBottomOf="@id/tv_contact_no" />
+
+        <ImageView
+            android:id="@+id/iv_icon_edit"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Edit Icon"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_delete"
+            app:layout_constraintTop_toBottomOf="@+id/bar_under"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/icon_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Delete Icon"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bar_under" />
+
+        <TextView
+            android:id="@+id/tv_appointmentfooter_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:text="03 PM, Friday, 01-01-2024"
+            android:textColor="#8E8E8E"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/bar_under"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_edit"
+            app:layout_constraintTop_toBottomOf="@id/bar_under" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
